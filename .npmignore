@@ -1,0 +1,12 @@
+.github
+.gitignore
+.npmignore
+.prettierignore
+.prettierrc
+.DS_Store
+.idea/
+*.log
+package-lock.json
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+DOCUMENTATION.md

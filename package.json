@@ -1,0 +1,33 @@
+{
+  "name": "create-project-files",
+  "version": "0.1.0",
+  "description": "CLI tool for scaffolding commonly used but not commonly included project files, like contributing docs, dot files, and licenses.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write ."
+  },
+  "bin": {
+    "create-dots": "src/index.js"
+  },
+  "keywords": [],
+  "author": "sandypockets",
+  "license": "MIT",
+  "homepage": "https://github.com/sandypockets/create-project-filesk#readme",
+  "bugs": {
+    "url": "https://github.com/sandypockets/create-project-files/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandypockets/create-project-files.git"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12"
+  },
+  "devDependencies": {
+    "prettier": "3.1.1"
+  }
+}
