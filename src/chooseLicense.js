@@ -1,6 +1,7 @@
 import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { log } from './log.js';
 
 function kebabToTitleCase(str) {
@@ -12,8 +13,10 @@ function kebabToTitleCase(str) {
 
 export async function chooseLicense(sharedGithubUsername = '') {
   try {
-    const sourceDir = path.join(path.resolve(), './templates');
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
+    const sourceDir = path.join(__dirname, '../templates');
     const licenseDir = path.join(sourceDir, 'licenses');
+
     const licenses = fs.readdirSync(licenseDir).map(file => path.basename(file, '.md'));
     const formattedLicenses = licenses.map(file => kebabToTitleCase(file));
 

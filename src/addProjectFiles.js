@@ -10,8 +10,7 @@ import { updateFiles } from './updateFiles.js';
 export async function addProjectFiles() {
   try {
     const __dirname = path.dirname(fileURLToPath(import.meta.url));
-    const sourceDir = path.join(__dirname, '/templates');
-    console.log("Source Directory:", sourceDir);
+    const sourceDir = path.join(__dirname, '../templates');
 
     const items = fs.readdirSync(sourceDir).filter(item => item !== 'licenses');
 

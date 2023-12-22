@@ -1,6 +1,6 @@
 {
   "name": "create-project-files",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "CLI tool for scaffolding commonly used but not commonly included project files, like contributing docs, dot files, and licenses.",
   "main": "src/index.js",
   "type": "module",
